@@ -9,6 +9,8 @@ import (
 	"strconv"
 )
 
+// defer this for some time - will work later on.
+
 func snippetView(w http.ResponseWriter, r *http.Request) {
 	id, err := strconv.Atoi(r.URL.Query().Get("id"))
 	if err != nil || id < 1 {
